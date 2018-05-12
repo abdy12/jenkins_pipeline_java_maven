@@ -9,7 +9,7 @@ node {
    // **       in the global configuration.           
    def mvnHome = tool 'MAVEN_HOME'
 
-   // Mark the code build 'stage'....
+   // Mark the code build 'stage'.....
    stage 'Build'
    // Run the maven build
    sh "${mvnHome}/bin/mvn -Dmaven.test.failure.ignore clean package"
